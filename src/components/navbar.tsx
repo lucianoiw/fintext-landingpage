@@ -60,14 +60,14 @@ export function Navbar() {
       fullWidth
       shadow={false}
       blurred={false}
-      color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
+      color="transparent"
+      className="absolute top-0 z-50 border-0"
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
-          Material Tailwind
+      <div className="container mx-auto flex items-center justify-center">
+        <Typography variant="h5" color="white">
+          FinText
         </Typography>
-        <ul
+        {/* <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-gray-900" : "text-white"
           }`}
@@ -78,8 +78,8 @@ export function Navbar() {
           <NavItem href="https://www.material-tailwind.com/docs/react/installation">
             Docs
           </NavItem>
-        </ul>
-        <div className="hidden gap-2 lg:flex">
+        </ul> */}
+        {/* <div className="hidden gap-2 lg:flex">
           <IconButton
             variant="text"
             color={isScrolling ? "gray" : "white"}
@@ -106,8 +106,8 @@ export function Navbar() {
               Blocks
             </Button>
           </a>
-        </div>
-        <IconButton
+        </div> */}
+        {/* <IconButton
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
@@ -118,9 +118,9 @@ export function Navbar() {
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
-        </IconButton>
+        </IconButton> */}
       </div>
-      <Collapse open={open}>
+      {/* <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <NavItem>Home</NavItem>
@@ -150,7 +150,7 @@ export function Navbar() {
             </a>
           </div>
         </div>
-      </Collapse>
+      </Collapse> */}
     </MTNavbar>
   );
 }

@@ -6,43 +6,40 @@ import CourseCard from "@/components/course-card";
 const OTHER_COURSES = [
   {
     img: "/image/blogs/blog-1.svg",
-    title: "Future of Web Development: Trends and Innovations",
-    desc: "Discover the latest trends and innovations shaping the future of web development.",
-    buttonLabel: "register for free",
+    title: "Por que criamos o FinText: A história por trás da plataforma",
+    desc: "Descubra como identificamos a necessidade de um sistema de projeções financeiras verdadeiramente útil para os brasileiros.",
   },
   {
     img: "/image/blogs/blog2.svg",
-    title: "WebDev Pro Code-a-Thon: Build a Responsive Website",
-    desc: "Participants will have 48 hours to create a responsive website from scratch using HTML, CSS, and JavaScript.",
-    buttonLabel: "register for free",
+    title: "Desenvolvendo o MVP: Definindo as funcionalidades essenciais",
+    desc: "Saiba como priorizamos as funcionalidades para entregar valor real desde a primeira versão.",
   },
   {
     img: "/image/blogs/blog3.svg",
-    title: "Ask the Experts: Frontend Web Development",
-    desc: "Join our live Q&A session with our experienced instructors. Get answers to your queries, insights into best practices.",
-    buttonLabel: "get ticket",
+    title:
+      "Projeções financeiras: Por que a maioria dos apps falha nesse aspecto",
+    desc: "Analisamos as limitações dos aplicativos financeiros atuais e como estamos resolvendo esses problemas.",
   },
   {
     img: "/image/blogs/blog4.svg",
-    title: "Web Accessibility: Building Inclusive Websites",
-    desc: "Industry experts will discuss the importance of inclusive design and share strategies for creating websites.",
-    buttonLabel: "get ticket",
+    title: "Experiência do usuário em finanças: Simplificando o complexo",
+    desc: "Como estamos transformando conceitos financeiros complexos em experiências intuitivas.",
   },
 ];
 
 export function OtherCourses() {
   return (
-    <section className="pb-20 px-8">
+    <section className="py-20 px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="blue-gray" className="mb-4">
-          Other Courses
+          Acompanhe nossa jornada
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
+          className="mx-auto w-full px-4 font-normal !text-gray-500"
         >
-          Looking to elevate your web development skills? Browse through 1,000+
-          web development courses and find the one that fits your needs.
+          Estamos construindo o FinText em público e compartilhando todo o
+          processo.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">

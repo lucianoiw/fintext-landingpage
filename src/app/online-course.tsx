@@ -5,65 +5,65 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 import {
   AcademicCapIcon,
+  CalculatorIcon,
   CheckBadgeIcon,
-  InboxIcon,
+  HeartIcon,
+  BellAlertIcon,
+  PresentationChartLineIcon,
 } from "@heroicons/react/24/solid";
 
 import FeatureCard from "@/components/feature-card";
 
 const FEATURES = [
   {
-    icon: InboxIcon,
-    title: "Hands-On Projects",
+    icon: CalculatorIcon,
+    title: "Organize suas finanças",
     description:
-      "Apply your knowledge to real-world projects, building a robust portfolio.",
+      "Adicione salários, despesas, dívidas e investimentos em minutos. Tenha uma visão clara do seu dinheiro.",
   },
   {
-    icon: AcademicCapIcon,
-    title: "Career Opportunities",
+    icon: HeartIcon,
+    title: "Planeje seus sonhos",
     description:
-      "React developers are in high demand and this course is designed for you!",
+      "Defina objetivos como comprar um carro ou viajar. Veja quanto poupar para alcançá-los.",
   },
   {
-    icon: CheckBadgeIcon,
-    title: "Flexible Learning",
-    description: "Access course materials whenever it suits your schedule.",
+    icon: PresentationChartLineIcon,
+    title: "Visualize seu futuro",
+    description:
+      "Projeções de fluxo de caixa e patrimônio em gráficos fáceis de entender. Saiba como você estará daqui 1, 5, 10 anos.",
+  },
+
+  {
+    icon: BellAlertIcon,
+    title: "Controle seu orçamento",
+    description:
+      "Crie orçamentos mensais e receba alertas para evitar gastos excessivos.",
   },
 ];
 
 export function OnlineCourse() {
   return (
     <section className="py-28 px-8">
-      <div className="container mx-auto grid grid-cols-1 place-items-center lg:grid-cols-3">
-        <div className="col-span-1 rounded-xl lg:mb-0 mb-12">
-          <Image
-            width={768}
-            height={500}
-            src="/image/online-course.png"
-            className="h-full max-h-[500px] w-full object-cover scale-110"
-            alt="online course"
-          />
-        </div>
-        <div className="col-span-2 lg:pl-24">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
-            Online Course
+      <div className="container mx-auto">
+        <div className="flex flex-col items-center">
+          <Typography variant="h2" color="blue-gray" className="mb-2">
+            Tudo que você precisa
           </Typography>
           <Typography
             variant="lead"
-            className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
+            className="mb-5 text-left text-lg !text-gray-500"
           >
-            In this comprehensive React Course, you&apos;ll delve into the world
-            of React, from its fundamentals to advanced techniques. Our expert
-            instructors will guide you through every step.
+            Recursos simples e poderosos para organizar sua vida financeira.
           </Typography>
+        </div>
 
-          <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3 ">
-            {FEATURES.map(({ icon, title, description }) => (
-              <FeatureCard key={title} icon={icon} title={title}>
-                {description}
-              </FeatureCard>
-            ))}
-          </div>
+        <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 lg:gap-10 lg:grid-cols-4">
+          {FEATURES.map(({ icon, title, description }) => (
+            <FeatureCard key={title} icon={icon} title={title}>
+              {description}
+            </FeatureCard>
+          ))}
         </div>
       </div>
     </section>

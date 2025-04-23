@@ -6,8 +6,8 @@ import Hero from "./hero";
 import OnlineCourse from "./online-course";
 import WhyChooseUs from "./why-choose-us";
 import CarouselFeatures from "./carousel-features";
-import Pricing from "./pricing";
 import OtherCourses from "./other-courses";
+import { Form } from "./form";
 
 export default function Campaign() {
   return (
@@ -16,9 +16,8 @@ export default function Campaign() {
       <Hero />
       <OnlineCourse />
       <WhyChooseUs />
-      <CarouselFeatures />
-      <Pricing />
       <OtherCourses />
+      <Form />
       <Footer />
     </>
   );
