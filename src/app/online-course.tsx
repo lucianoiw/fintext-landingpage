@@ -47,12 +47,22 @@ export function OnlineCourse() {
     <section className="py-28 px-8">
       <div className="container mx-auto">
         <div className="flex flex-col items-center">
-          <Typography variant="h2" color="blue-gray" className="mb-2">
+          <Typography
+            variant="h2"
+            color="blue-gray"
+            className="mb-2"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+          >
             Tudo que você precisa
           </Typography>
           <Typography
             variant="lead"
             className="mb-5 text-left text-lg !text-gray-500"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             Recursos simples e poderosos para organizar sua vida financeira.
           </Typography>

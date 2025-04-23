@@ -21,6 +21,9 @@ function NavItem({ children, href }: NavItemProps) {
         target={href ? "_blank" : "_self"}
         variant="small"
         className="font-medium"
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
       >
         {children}
       </Typography>
@@ -62,9 +65,18 @@ export function Navbar() {
       blurred={false}
       color="transparent"
       className="absolute top-0 z-50 border-0"
+      placeholder=""
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
     >
       <div className="container mx-auto flex items-center justify-center">
-        <Typography variant="h5" color="white">
+        <Typography
+          variant="h5"
+          color="white"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           FinText
         </Typography>
         {/* <ul

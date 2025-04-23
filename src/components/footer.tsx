@@ -24,6 +24,9 @@ export function Footer() {
         <Typography
           color="blue-gray"
           className="text-center font-normal !text-white text-sm"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           &copy; {CURRENT_YEAR} - Todos os direitos reservados.
         </Typography>

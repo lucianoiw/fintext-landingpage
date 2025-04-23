@@ -34,10 +34,22 @@ function Option({ icon: Icon, title, children }: OptionProps) {
         <Icon className="text-gray-900 h-6 w-6" />
       </div>
       <div>
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+        <Typography
+          variant="h5"
+          color="blue-gray"
+          className="mb-2"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           {title}
         </Typography>
-        <Typography className="mb-2 md:w-10/12 font-normal !text-gray-500">
+        <Typography
+          className="mb-2 md:w-10/12 font-normal !text-gray-500"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           {children}
         </Typography>
       </div>
@@ -49,19 +61,31 @@ export function WhyChooseUs() {
   return (
     <div className="bg-gray-100">
       <section className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-10">
-        <Typography variant="h2" className="text-center mb-2" color="blue-gray">
+        <Typography
+          variant="h2"
+          className="text-center mb-2"
+          color="blue-gray"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           Por que usar o FinText?
         </Typography>
         <Typography
           variant="lead"
           className="mb-16 w-full text-center font-normal !text-gray-500 lg:w-10/12"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           A solução para quem quer sair do caos financeiro e construir um futuro
           seguro.
         </Typography>
         <div className="mt-8">
           <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-            <BackgroundCard title="Seus problemas financeiros têm solução"></BackgroundCard>
+            <BackgroundCard title="Seus problemas financeiros têm solução">
+              <></>
+            </BackgroundCard>
             <div className="space-y-8">
               <div className="my-4">
                 <Option icon={MapIcon} title="Navegando às cegas">
@@ -126,7 +150,9 @@ export function WhyChooseUs() {
                 detalhados e monitoramento automático de progresso.
               </Option>
             </div>
-            <BackgroundCard title="Controle financeiro que faz sentido para você"></BackgroundCard>
+            <BackgroundCard title="Controle financeiro que faz sentido para você">
+              <></>
+            </BackgroundCard>
           </div>
         </div>
       </section>

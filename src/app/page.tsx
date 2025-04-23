@@ -5,7 +5,6 @@ import { Navbar, Footer } from "@/components";
 import Hero from "./hero";
 import OnlineCourse from "./online-course";
 import WhyChooseUs from "./why-choose-us";
-import CarouselFeatures from "./carousel-features";
 import OtherCourses from "./other-courses";
 import { Form } from "./form";
 

@@ -12,6 +12,9 @@ function Hero() {
             variant="h1"
             color="white"
             className="md:max-w-full lg:max-w-3xl"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             Planeje sua vida financeira com clareza e confiança.
           </Typography>
@@ -19,13 +22,22 @@ function Hero() {
             variant="lead"
             color="white"
             className="mt-6 mb-10 w-full md:max-w-full lg:max-w-3xl"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
           >
             O FinText é uma plataforma de planejamento financeiro que ajuda você
             a visualizar suas contas, definir metas realistas e tomar decisões
             financeiras com confiança.
           </Typography>
           <div>
-            <Button variant="gradient" color="white">
+            <Button
+              variant="gradient"
+              color="white"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+            >
               Me mantenha informado
             </Button>
           </div>
