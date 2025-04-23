@@ -13,7 +13,7 @@ export const Form = ({}: FormProps) => {
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData.entries());
 
-    const response = await fetch("https://fintext.com.br/api", {
+    const response = await fetch("/api", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
