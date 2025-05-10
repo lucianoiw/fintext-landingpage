@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import {
   Navbar as MTNavbar,
@@ -70,7 +71,12 @@ export function Navbar() {
       onPointerLeaveCapture={() => {}}
     >
       <div className="container mx-auto flex items-center justify-center">
-        <Typography
+        <img
+          src="/image/logo-text--white.png"
+          className="max-w-[160px] mt-4"
+          alt="FinText"
+        />
+        {/* <Typography
           variant="h5"
           color="white"
           placeholder=""
@@ -78,7 +84,7 @@ export function Navbar() {
           onPointerLeaveCapture={() => {}}
         >
           FinText
-        </Typography>
+        </Typography> */}
         {/* <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-gray-900" : "text-white"

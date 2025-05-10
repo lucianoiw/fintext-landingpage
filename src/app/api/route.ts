@@ -6,8 +6,6 @@ export const POST = async (request: Request) => {
     return new Response("Invalid data", { status: 400 });
   }
 
-  console.log({ name, email });
-
   // Send the data to the webhook
   const response = await fetch("https://n8n.89dev.com.br/webhook/fintext", {
     method: "POST",
